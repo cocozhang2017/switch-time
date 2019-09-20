@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="middle">
+    <p>没有设置定时器,请点击下方按钮</p>
+  </view>
+  <view class="footer">
+    <button class="qrcode" bindtap="addTime">+ 添加定时</button>
+  </view>
+</view>
+

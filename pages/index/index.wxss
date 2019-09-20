@@ -1,0 +1,152 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 10%;
+}
+
+.qrcode {
+  background: #3684FF;
+  width: 46%;
+  margin: 1% 2%;
+  display: inline-block;
+  color: #fff;
+  border-radius: 10rpx;
+  font-size: 16px;
+}
+
+#modal input {
+  border: 1px solid #02a8fe;
+  margin-top: 10rpx;
+  font-size: 12px;
+}
+.main {
+  width:100%;
+  height:80%;
+}
+.cart-box {
+  position: fixed;
+  top: 230rpx;
+  height: 80%;
+  left: 0;
+  width: 100%;
+}
+
+.cart-list {
+  position: relative;
+  height: 155rpx;
+  border-bottom: 1rpx solid #3684FF;
+}
+
+.cart-list .cart-pro-select {
+  position: absolute;
+  left: 20rpx;
+  top: 55rpx;
+  width: 19rpx;
+  height: 19rpx;
+}
+
+.cart-list .cart-thumb {
+  position: absolute;
+  left: 180rpx;
+  margin-top: 35rpx;
+  width: 85rpx;
+  font-size:14px;
+  text-align: center;
+  height: 85rpx;
+  background: #3486ff;
+  color:#fff;
+}
+.cart-thumb>span {
+  text-align: center;
+  line-height:85rpx;
+  display: inline-block;
+
+}
+.cart-list .cart-pro-price {
+  display: inline-block;
+  width: 250rpx;
+  margin-left: 450rpx;
+  margin-top: 15rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+}
+
+.cart-box>button {
+  font-size: 16px;
+  margin-top: 5%;
+  background: #3684FF;
+  color:#fff;
+}
+
+.cart-footer {
+  position: fixed;
+  top: 140rpx;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 100rpx 0 80rpx;
+  box-sizing: border-box;
+  background: #f0f8ff;
+  color: #000;
+}
+
+.total-select {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* 批量开关 */
+
+.order-icon {
+  position: absolute;
+  left: 380rpx;
+  width: 355rpx;
+  height: 90rpx;
+}
+
+.order-icon>button {
+  margin-top: 15rpx;
+  font-size: 12px;
+  background: #f0f8ff;
+  color: #000;
+  width: 165rpx;
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.order-icon>button+button {
+  margin-left: 20rpx;
+}
+
+.order-icon image, .order-icon navigator {
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.cart-toatl-price {
+  float: right;
+  width: 120rpx;
+  margin-right: 300rpx;
+}
+
+.cart-no-data {
+  padding: 40rpx 0;
+  color: #999;
+  text-align: center;
+}
+.main p {
+  font-size:12px;
+  color:#000;
+  text-align: center;
+}

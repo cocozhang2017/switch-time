@@ -1,0 +1,30 @@
+<view class="container">
+<p>您当前保存文件的时间为:{{date}}</p>
+<view class="page">
+  <view class="page__bd">
+    <view class="section">
+      <view class="section__title">延长{{hour}}小时{{dateT}}分钟</view>
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="picker">
+          延时时间: {{time}}
+        </view>
+      </picker>
+    </view>
+
+  </view>
+</view>
+<!-- 选择on or off -->
+<view class="action">
+  <p>动作:</p>
+  <radio-group class="item-right radio-group" bindchange="radioChange">
+ <label class="radio" wx:for-items="{{items}}">
+ <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+ </label>
+</radio-group>
+</view>
+</view>
+  <!-- 取消,启用 -->
+  <view class="submitn">
+ <button class="cancel" bindtap="cancel">取消</button>
+ <button class="open" bindtap="open">启用</button>
+</view>

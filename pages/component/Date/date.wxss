@@ -1,0 +1,103 @@
+page {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  height: 50%;
+  margin: 1% 5%;
+  /* text-align: center; */
+}
+
+.container>p {
+  font-size: 12px;
+  color: #ddd;
+  /* text-align: center; */
+}
+
+.page {
+  min-height: 40%;
+  flex: 1;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.picker {
+  margin: 20px 0;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.section__title {
+  margin-top: 20px;
+  /* padding-left: 30rpx; */
+  padding-right: 30rpx;
+  font-size: 14px;
+}
+
+.item-left {
+  display: block;
+}
+.action {
+   font-size: 14px;
+}
+.action>p {
+    display:block;
+    /* margin-top:30rpx; */
+}
+.action>.action_on {
+  display:inline-block;
+  margin:5% 10%;
+  border:1px solid #ddd;
+  height:50rpx;
+  width:34%;
+  box-shadow: 2px 2px 3px #E0EEE0;
+}
+.action>.action_on>radio,.action>.action_off>radio {
+   display:inline-block;
+   padding-left:33%;
+   color:skyblue;
+}
+.action>.action_off {
+  display:inline-block;
+  margin:5% 10% 5% 0;
+  border:1px solid #ddd;
+  height:50rpx;
+  width:34%;
+   box-shadow: 2px 2px 3px #E0EEE0;
+}
+.submitn {
+  margin-top:15%;
+  height:60rpx;
+}
+.submitn>.cancel,.submitn>.open {
+  background: #3684FF;
+  color:#fff;
+  width:30%;
+  display: inline-block;
+  margin-left:15%;
+  height:60rpx;
+  line-height: 60rpx;
+  font-size:14px;
+}
+.radio-group {
+  margin-top:20rpx;
+}
+
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+    border-radius: 50%;
+    width: 35px; 
+    height: 35px; 
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px; /* 对勾大小 26rpx */
+    color:#fff; /* 对勾颜色 */
+    background: #3684FF;
+    border-color: #3684FF;
+}
+

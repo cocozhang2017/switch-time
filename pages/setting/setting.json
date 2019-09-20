@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "设备设置",
+  "usingComponents": {
+    "Select": "../component/select/select"
+  }
+}

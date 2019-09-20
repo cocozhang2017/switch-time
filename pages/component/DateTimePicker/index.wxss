@@ -1,0 +1,127 @@
+page {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 40%;
+}
+
+.modal-content {
+  background-color: #fff;
+}
+
+.section, .picker {
+  width: 100vw;
+  height: 80rpx;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+  font-size: 14px;
+  border-bottom: 1px solid #3684ff;
+}
+
+.top-text {
+  float: left;
+}
+
+.kouviewList {
+  background-color: #f7f7f7;
+}
+
+.kouview {
+  height: 170px;
+  margin-top: 5px;
+}
+
+.kouviews {
+  height: 150px;
+  margin-top: 5px;
+}
+
+.time-title {
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #3684ff;
+}
+
+.action {
+  font-size: 14px;
+  padding: 10rpx 20rpx;
+}
+
+.section .picker {
+  margin-left: 50%;
+  font-size: 14px;
+}
+
+.picker-text {
+  text-align: center;
+  color: #3684ff;
+  background-color: #fff;
+}
+
+.action>p {
+  display: block;
+  margin-top: 30rpx;
+}
+
+.action>.action_on {
+  display: inline-block;
+  margin: 5% 10%;
+  border: 1px solid #ddd;
+  height: 50rpx;
+  width: 34%;
+  box-shadow: 2px 2px 3px #e0eee0;
+}
+
+.action>.action_on>radio, .action>.action_off>radio {
+  display: inline-block;
+  padding-left: 33%;
+  color: #3684ff;
+}
+
+.action>.action_off {
+  display: inline-block;
+  margin: 5% 10% 5% 0;
+  border: 1px solid #ddd;
+  height: 50rpx;
+  width: 34%;
+  box-shadow: 2px 2px 3px #e0eee0;
+}
+
+.submitn {
+  margin-top: 15%;
+  height: 60rpx;
+}
+
+.submitn>.cancel, .submitn>.open {
+  background: #3684ff;
+  color: #fff;
+  width: 30%;
+  display: inline-block;
+  margin-left: 15%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 14px;
+}
+
+.radio-group {
+  margin-top: 20rpx;
+}
+
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 16px; /* 对勾大小 26rpx */
+  color: #fff; /* 对勾颜色 */
+  background: #3684ff;
+  border-color: #3684ff;
+}

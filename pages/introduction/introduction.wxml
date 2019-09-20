@@ -1,0 +1,8 @@
+<!--pages/introduction/introduction.wxml-->
+<view class="container">
+  <h4>公司简介</h4>
+  <p>
+    西安市天洲电子科技有限公司是以高科技产业为主、以信息产业为龙头、集科工贸于一体的多元化、外向型企业。公司业务涉及通信等领域，以设备测控及管理系统、金融安全保卫系统、公安指挥调度系统、交警交通实时路况监控等系统集成项目为主营，为不同类型的客户提供全方位的解决方案。
+  </p>
+</view>
+  <map longitude= "{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" show-location  markers="{{marker}}" ></map>

@@ -1,0 +1,34 @@
+page {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  width:90%;
+  margin:0 5%;
+  height:100%;
+}
+.middle {
+  box-shadow: 0 0 10px #f1f1f1; 
+  border:1px solid #FAFAFA;
+   width:100%;
+  height:75%;
+  padding-top:5%;
+   text-align: center; 
+}
+.middle>p {
+  color:#ddd;
+  font-size:14px;
+  text-align: center;
+}
+.container>.footer {
+  width:100%;
+  margin-top:20%;
+}
+.container>.footer>.qrcode {
+  border-radius: 6px;
+  color:#fff;
+  font-size:14px;
+   background: #3684FF;
+}
+

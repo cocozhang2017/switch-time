@@ -1,0 +1,15 @@
+<view class='top'>
+  <view class='top-text'>设备名称:</view>
+  <span class="top-right">{{ids}}</span>
+</view>
+
+<view class="section">
+  <view class='top-text'> 上电状态:</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+</view>
+
+ 

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<template name="msgItem">
+  <view class="container">
+    <view class="footer">
+      <button class="qrcode" bindtap="addClick">+ 手动添加</button>
+    </view>
+  </view>
+</template>

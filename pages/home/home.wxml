@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="status">
+    <span>状态:</span>
+    <i class="online">{{status}}</i>
+  </view>
+  <view class="btn">
+    <button bindtap="settingPage">设置 </button>
+  </view>
+  <view class="onimg">
+    <button class="ava_img" wx:if="{{checked}}" bindtap="open">
+      <span>ON</span>
+    </button>
+    <button wx:else class="ava_img" bindtap="close">
+      <span>OFF</span>
+    </button>
+  </view>
+
+</view>

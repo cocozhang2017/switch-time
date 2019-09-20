@@ -1,0 +1,12 @@
+
+<view class="container">
+  <view class="middle">
+    <p>暂未分享,请点击下面按钮进行分享</p>
+  </view>
+  <view class="footer">
+    <button class="qrcode" bindtap="addShare">+ 分享</button>
+  </view>
+  <modal id="dialog" hidden="{{hiddenmodalput}}" title="提示" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+ <span id="user">无权限</span>
+</modal>
+</view>

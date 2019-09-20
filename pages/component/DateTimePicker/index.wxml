@@ -1,0 +1,57 @@
+<view class="container">
+<view class="picker" bindtap="addTime">
+    当前选择: {{checkTime}}
+  </view>
+  <modal class="modal" hidden="{{flag}}" no-cancel bindconfirm="getTime" confirmText="确定">
+    <view class="modal-content">
+      <view class="time_screens">
+        <view style="text-align:center;color:#3684FF">{{year}}-{{month}}-{{day}} {{hour}}:{{minute}}</view>
+        <view style="border-top:1px solid #3684FF;height:25px;font-size:14px;">
+          <view class="time-title">年</view>
+          <view class="time-title">月</view>
+          <view class="time-title">日</view>
+          <view class="time-title">时</view>
+          <view class="time-title">分</view>
+        </view>
+        <picker-view indicator-style="height: 30px;" style="width: 100%; height: 210px;background:#fff;" value="{{value}}" bindchange="bindChange">
+          <picker-view-column class="picker-text">
+            <view wx:for="{{years}}" style="line-height: 30px">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="picker-text">
+            <view wx:for="{{months}}" style="line-height: 30px">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="picker-text">
+            <view wx:for="{{days}}" style="line-height: 30px">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="picker-text">
+            <view wx:for="{{hours}}" style="line-height: 30px">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column class="picker-text">
+            <view wx:for="{{minutes}}" style="line-height: 30px">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+    </view>
+  </modal>
+<view class="section">
+  <view class='top-text'> 重复:</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+</view> 
+<view class="action">
+  <p>动作:</p>
+  <radio-group class="item-right radio-group" bindchange="radioChange">
+ <label class="radio" wx:for-items="{{items}}">
+ <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+ </label>
+</radio-group>
+</view>
+</view>
+  <!-- 取消,启用 -->
+  <view class="submitn">
+ <button class="cancel" bindtap="cancel">取消</button>
+ <button class="open" bindtap="open">启用</button>
+  </view>

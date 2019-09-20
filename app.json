@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/introduction/introduction",
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/share/share",
+    "pages/delayed/delayed",
+    "pages/time/time",
+    "pages/setting/setting",
+    "pages/component/select/select",
+    "pages/component/common/common",
+    "pages/component/DateTimePicker/index",
+    "pages/component/Date/date"
+  ],
+  "tabBar": {
+    "color": "#8DB6CD",
+    "selectedColor": "#3684FF",
+    "borderStyle": "black",
+    "backgroundColor": "#F5FFFA",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/selectHome.png"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "text": "分享",
+        "iconPath": "pages/images/share.png",
+        "selectedIconPath": "pages/images/selectShare.png"
+      },
+      {
+        "pagePath": "pages/time/time",
+        "text": "定时",
+        "iconPath": "pages/images/time.png",
+        "selectedIconPath": "pages/images/selectTime.png"
+      },
+      {
+        "pagePath": "pages/delayed/delayed",
+        "text": "延时",
+        "iconPath": "pages/images/delayed.png",
+        "selectedIconPath": "pages/images/selectDelayed.png"
+      },
+      {
+        "pagePath": "pages/introduction/introduction",
+        "text": "公司简介",
+        "iconPath": "pages/images/introd.png",
+        "selectedIconPath": "pages/images/selectIntrod.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#3684FF",
+    "navigationBarTitleText": "智控系统",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
